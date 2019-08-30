@@ -10,13 +10,62 @@
 
     <title>Hello, world!</title>
     <style>
-        * {
-            border: 1px solid lightgreen;
+        .backgroundbody{
+            background-color: gainsboro;
+            padding-bottom: 10px;
         }
+        .background_container{
+            width: 900px;
+            border: 1px solid rgba(122,0,0,.3);
+            font-family: -apple-system;
+            background-color: white;
 
-    </style>
+        }
+        .image{
+           border-radius: 50%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .image:hover{
+            border-radius: 25%;
+        }
+        .img1{
+            border-radius: 0px;
+            margin-top: -20px;
+        }
+        .contact,.edu,.lang,.backgroundimg{
+            background-color: darkslateblue;
+            color: white;
+            padding-right: 0px;
+        }
+        hr{
+            background-color: white;
+            margin-right: 10px;
+        }
+        .personal{
+            padding-left: 40px;
+            margin-left: 35px;
+        }
+       .personal:hover{
+           border-left: 2px solid darkslateblue;
+       }
+        .progress0{
+            background-color: transparent;
+            border-radius: 10px ;
+            height: 50px;
+            margin-bottom: -20px;
+            padding-bottom: 0px;
+        }
+        .progress_bar{
+            background-color: darkslateblue;
+            border-radius: 10px;
+        }
+        body > div.container-fluid.background_container > div:nth-child(2) > div.col-sm-5.contact > div.col{
+            margin-left: -15px;
+        }
+     </style>
 </head>
-<body>
+<body class="backgroundbody">
 <div class="container-fluid">
     <div class="row">
         <div class="logo">WINTER</div>
@@ -30,7 +79,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" style="width: 900px">
     <div class="pagin">
         <a href="#" class="first">FIRST</a>
         <a href="#" class="prev">&laquo</a>
@@ -43,32 +92,38 @@
         <a href="#" class="last">LAST</a>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="row" id="row1">
-        <div class="col-sm-4">
-            <div><img  src="https://bit.ly/2Z3U6RL" alt="hello" width="300px" height="300px"></div>
+<div class="container-fluid background_container" >
+    <div class="row">
+        <div class="col-sm-5 mb-1 backgroundimg" id="">
+            <div class="col px-3 mt-2 "><img class="image" src="https://bit.ly/2Z3U6RL" alt="hello" width="300px" height="300px"></div>
         </div>
         <div class="col">
-            <div>
-                <b>HOANG KHOI NGUYEN</b><br>
+            <div class="col-sm-12 mt-2">
+                <h3><b>HOANG KHOI NGUYEN</b></h3>
                 <b>WEB DEVELOPMENT</b>
+                <hr style="background-color: darkslateblue"><br>
             </div>
+            <div class="col mb-0 mt-0 "><img class="img1" src="https://www.seoclerk.com/pics/460696-1z0cfk1466847141.png" alt="hello" width="300px" height="190"></div>
         </div>
+
     </div>
-    <div class="row" id="row2">
-        <div class="col-sm-4">
-            <div>Contact</div>
-            <hr><br>
+    <div class="row">
+        <div class="col-sm-5 contact">
+            <br><div class="col ">CONTACT</div>
+            <hr>
             <div><i class="fa fa-phone"></i> &nbspPHONE: 0919062158</div>
             <br>
             <div><i class="fa fa-envelope"></i> &nbspEMAIL: hoangkhoinguyen3001@gmail.com</div>
             <br>
             <div><i class="fa fa-map-marker"></i> &nbspADDRESS: 62/10 Chu Thien St,Hiep Tan Ward,Tan Phu Country</div>
-            <br>
-
+            <br><div>EDUCATION</div>
+            <hr><br>
+            <div><i class="fa fa-star"></i> &nbsp; DEGREE NAME : ADSE</div><br>
+            <div><i class="fa fa-star"></i> &nbsp; UNIVERSITY NAME : APTECH</div>
         </div>
         <div class="col">
-            <div>Personal Detail</div>
+            <br><div><b>PERSONAL DETAIL</b></div>
+            <hr style="background-color: darkslateblue">
             <div>
                 <div>2008-2010</div>
                 <div class="personal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At doloremque expedita facere fugiat harum minima.</div>
@@ -84,69 +139,87 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-4">
-            <div>Education</div>
-            <div><i class="fa fa-star"></i> &nbsp; DEGREE NAME : ADSE</div><br>
-            <div><i class="fa fa-star"></i> &nbsp; UNIVERSITY NAME : APTECH</div>
+        <div class="col-sm-5 mt-1 pt-4 edu">
+            <div>PERSONAL INFO</div>
+            <hr><br>
+            <div><i class="fa fa-male"></i> &nbsp; FATHER NAME :THANH HOANG</div><br>
+            <div><i class="fa fa-users"></i> RELATIONSHIP : MARRIED</div><br>
+            <div><i class="fa fa-flag-o"></i> NATIONALITY : VIETNAMESE</div><br>
         </div>
-        <div class="col">
-            <div>Technical Skill</div>
-            <div class="pro">
-                <div>HTML</div>
-                <div class="progressbar">
-                    <div class="row9"></div>
+        <div class="col" style="border-right: 10px solid rgba(122,0,0,.1)">
+            <br><div><b>TECHNICAL SKILL</b></div>
+            <hr style="background-color: darkslateblue">
+            <div class="progress progress0" >
+                <div class="col-sm-4"><h6>HTML</h6></div>
+                <div class="col-sm-8 ">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
                 </div>
-                <div>90%</div>
-                <DIV>WORDPRESS</DIV>
-                <div class="progressbar">
-                    <div class="row8"></div>
+            </div>
+            <div class="progress progress0" >
+                <div class="col-sm-4"><h6>WORDPRESS</h6></div>
+                <div class="col-sm-8">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
                 </div>
-                <div>80%</div>
-                <DIV>C/C++</DIV> <div class="progressbar">
-                <div class="row7"></div>
             </div>
-                <div>70%</div>
-                <DIV>CSS</DIV> <div class="progressbar">
-                <div class="row6"></div>
+            <div class="progress progress0">
+                <div class="col-sm-4"><h6>C/C++</h6></div>
+                <div class="col-sm-8">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70</div>
+                </div>
             </div>
-                <div>60%</div>
-                <DIV>JAVACRIPT</DIV> <div class="progressbar">
-                <div class="row5"></div>
+            <div class="progress progress0">
+                <div class="col-sm-4"><h6>CSS</h6></div>
+                <div class="col-sm-8">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
+                </div>
             </div>
-                <div>50%</div>
+            <div class="progress progress0">
+                <div class="col-sm-4"><h6>JAVASCRIPT</h6></div>
+                <div class="col-sm-8">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
+                </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-4">
-            <div>Language</div>
+        <div class="col-sm-5 mt-1 lang" >
+            <br><div>LANGUAGE</div>
+            <hr><br>
             <div><i class="fa fa-star"></i> &nbsp; ENGLISH</div><br>
             <div><i class="fa fa-star"></i> &nbsp; CHINESE</div>
         </div>
-        <div class="col">
-            <div>Software Skill</div>
-            <div class="pro">
-                <div>PHOTOSHOP</div>
-                <div class="progressbar">
-                    <div class="row5"></div>
+        <div class="col" style="border-right: 10px solid rgba(122,0,0,.1)">
+            <br><div><b>SOFTWARE SKILL</b></div>
+            <hr style="background-color: darkslateblue">
+            <div class="progress progress0" >
+                <div class="col-sm-4"><h6>PHOTOSHOP</h6></div>
+                <div class="col-sm-8 ">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
                 </div>
-                <div>50%</div>
-                <DIV>WORDPRESS</DIV> <div class="progressbar">
-                <div class="row6"></div>
             </div>
-                <div>60%</div>
-                <DIV>MS WORD</DIV> <div class="progressbar">
-                <div class="row7"></div>
+            <div class="progress progress0" >
+                <div class="col-sm-4"><h6>WORDPRESS</h6></div>
+                <div class="col-sm-8">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
+                </div>
             </div>
-                <div>70%</div>
-                <DIV>MS EXCEL</DIV> <div class="progressbar">
-                <div class="row8"></div>
+            <div class="progress progress0">
+                <div class="col-sm-4 ml-0"><h6>MS WORD</h6></div>
+                <div class="col-sm-8">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70</div>
+                </div>
             </div>
-                <div>80%</div>
-                <DIV>WEB STORM</DIV> <div class="progressbar">
-                <div class="row9"></div>
+            <div class="progress progress0">
+                <div class="col-sm-4"><h6>MS EXCEL</h6></div>
+                <div class="col-sm-8">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
+                </div>
             </div>
-                <div>90%</div>
+            <div class="progress progress0">
+                <div class="col-sm-4"><h6>WEBSTORM</h6></div>
+                <div class="col-sm-8">
+                    <div class="progress-bar progress_bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
+                </div>
             </div>
         </div>
     </div>
