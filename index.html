@@ -13,6 +13,8 @@
         .backgroundbody{
             background-color: gainsboro;
             padding-bottom: 10px;
+            margin-left: 17%;
+            margin-right: 17%;
         }
         .background_container{
             width: 900px;
@@ -63,10 +65,6 @@
         body > div.container-fluid.background_container > div:nth-child(2) > div.col-sm-5.contact > div.col{
             margin-left: -15px;
         }
-        .navkeleton{
-            margin-left: 17%;
-            margin-right: 17%;
-        }
        .navbar{
            background-color: darkslateblue !important;
        }
@@ -90,11 +88,20 @@
         }
         .navbar .nav-item .dropdown-menu .dropdown-item:hover  {
            color: lightgreen!important;
+            opacity: 0.5;
         }
+        .navbar-toggler{
+            background-color: darkslateblue!important;
+            color: white!important;
+        }
+       #pag{
+           margin-left: 35%;
+           margin-top: 15px;
+       }
      </style>
 </head>
 <body class="backgroundbody">
-<nav class="navbar navbar-expand-lg navbar-light bg-light navkeleton ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -129,19 +136,15 @@
         </form>
     </div>
 </nav>
-<div class="container-fluid" style="width: 900px">
-    <div class="pagin">
-        <a href="#" class="first">FIRST</a>
-        <a href="#" class="prev">&laquo</a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#" class="next">&raquo;</a>
-        <a href="#" class="last">LAST</a>
-    </div>
-</div>
+<nav aria-label="Page navigation example " id="pag" >
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>
 <div class="container-fluid background_container" >
     <div class="row">
         <div class="col-sm-5 mb-1 backgroundimg" id="">
