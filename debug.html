@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript debug</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<style>
+    button{
+        height: 30px;
+        border-radius: 10px;
+    }
+    #div1{
+        width: 80px;
+        height: 80px;
+        display: none;
+        background-color: red;
+    }
+    #div2{
+        width: 80px;
+        height: 80px;
+        display: none;
+        background-color: green;
+    }
+    #div3{
+        width: 80px;
+        height: 80px;
+        display: none;
+        background-color: blue;
+    }
+    #panel, #flip,#panel1,#flip1,#flip2,#panel2{
+        padding: 5px;
+        text-align: center;
+        background-color: lightgreen;
+        border: 1px solid red;
+
+    }
+    #panel{
+        padding: 50px;
+        display: none;
+    }
+    #panel1{
+        padding: 50px;
+    }
+    #panel2{
+        padding: 50px;
+    }
+    #ani{
+        background: lightgreen;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+    }
+    #ani1{
+        background: lightgreen;
+        height: 100px;
+        width: 200px;
+        position: absolute;
+    }
+</style>
+<body>
+<h1>javascript debugging</h1>
+<button onclick="myfunction()">click me</button>
+<button>click button</button>
+<button id="hide">hide</button>
+<button id="show">show</button>
+<button id="toggle">toggle</button>
+<button id="to">fadeto</button>
+<button id="animate">animation</button>
+<button id="stop">stop</button>
+<button id="text">show text</button>
+<button id="html">show html</button>
+<button id="value">value</button>
+<button id="getattribute">get attribute</button>
+<button id="setattribute">set attribute</button>
+<p>hello world</p>
+<div><p>Name: <input type="text" id="val" value="Khoi Nguyen"></p></div>
+<div><a href="https://www.w3schools.com" id="attr">w3schools.com</a></div>
+<div id="flip">click to <b>slide</b> down panel</div>
+<div id="panel">hello world</div>
+<div id="flip1">click to slide down panel</div>
+<div id="panel1">hello world</div>
+<div id="flip2">click to slide down panel</div>
+<div id="panel2">hello world</div>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="ani1">HELLO</div>
+Name: <input type="text" name="fullname">
+Email: <input type="text" name="email">
+<p id="demo">id demo</p>
+<p class="demo">class demo</p>
+<p>List 1:
+<ul>
+    <li>coffee</li>
+    <li>milk</li>
+    <li>tea</li>
+</ul>
+</p>
+<p>List 2:
+<ul>
+    <li>coffee2</li>
+    <li>milk2</li>
+    <li>tea2</li>
+</ul>
+</p>
+<div><a href="https://www.w3schools.com/" target="_parent">html</a></div>
+<div><p><a href="https://www.w3schools.com/">html</a></p></div>
+<table border="1">
+    <tr>
+        <th>Company</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Berglunds snabbköp</td>
+        <td>Sweden</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Mexico</td>
+    </tr>
+    <tr>
+        <td>Ernst Handel</td>
+        <td>Austria</td>
+    </tr>
+    <tr>
+        <td>Island Trading</td>
+        <td>UK</td>
+    </tr>
+</table>
+
+
+<script src="demo.js"></script>
+</body>
+</html>
