@@ -58,6 +58,22 @@
         width: 200px;
         position: absolute;
     }
+    .important{
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .blue{
+        color: red;
+    }
+    #divmens{
+        height: 100px;
+        width: 300px;
+        padding: 10px;
+        margin: 3px;
+        border: 1px solid red;
+        background-color: lightgreen;
+    }
+
 </style>
 <body>
 <h1>javascript debugging</h1>
@@ -74,6 +90,17 @@
 <button id="value">value</button>
 <button id="getattribute">get attribute</button>
 <button id="setattribute">set attribute</button>
+<button onclick="appendtext()">append text</button>
+<button id="appendlist">append list items</button>
+<button onclick="before">before</button>
+<button onclick="after()">after</button>
+<button id="remove">remove</button>
+<button id="empty">empty</button>
+<button id="addclass">addclass</button>
+<button id="removeclass">removeclass</button>
+<button id="toggleclass">toggleclass</button>
+<button id="css">css</button>
+<button id="dimension">dimension</button>
 <p>hello world</p>
 <div><p>Name: <input type="text" id="val" value="Khoi Nguyen"></p></div>
 <div><a href="https://www.w3schools.com" id="attr">w3schools.com</a></div>
@@ -86,6 +113,7 @@
 <div id="div1"></div>
 <div id="div2"></div>
 <div id="div3"></div>
+<div id="divmens"></div>
 <div id="ani1">HELLO</div>
 Name: <input type="text" name="fullname">
 Email: <input type="text" name="email">
@@ -133,7 +161,10 @@ Email: <input type="text" name="email">
         <td>UK</td>
     </tr>
 </table>
-
+<div><img src="image/backgroundnav.png" alt="hello" style="width: 200px" height="300px"></div>
+<p style="background-color: darkgreen">this is a paragraph</p>
+<p style="background-color: lightgreen">this is a paragraph</p>
+<p style="background-color: green">this is a paragraph</p>
 
 <script src="demo.js"></script>
 </body>

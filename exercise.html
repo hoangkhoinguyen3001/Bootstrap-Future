@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<style>
+    .container{
+        border: 1px solid lightgreen;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-top: 60px;
+        height: 600px;
+    }
+    .tabcontent{
+        border: 1px solid lightgreen;
+    }
+    .button{
+        display: inline-block;
+        border: 1px solid lightgreen;
+        padding: 12px;
+    }
+    .bump{
+        border: 1px solid lightgreen;
+        padding: 12px;
+    }
+    .button.active{
+        background: lightgreen;
+        font-weight: bold;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="tabcontent">
+        <div>
+            <div class="bump">light</div>
+            <div class="button buttonon active">on</div>
+            <div class="button buttonoff">off</div>
+
+        </div>
+
+    </div>
+</div>
+<script>
+    $('.button').click(function () {
+        $('.button').toggleClass('active');
+    });
+    $('.buttonon').click(function () {
+        $('.bump').text('light');
+    });
+    $('.buttonoff').click(function () {
+        $('.bump').text('dark');
+    });
+</script>
+</body>
+</html>

@@ -397,3 +397,133 @@ $(document).ready(function () {
     }) ;
 });
  */
+//bai 12 - add elements - append/prepend/after/before..................................................................
+/*$(document).ready(function () {
+    $("#appendtext").click(function () {//the text appears at the end of the sentence
+        $("p").append(" <b>nguyen dep trai</b>");
+    }) ;
+    $("#appendlist").click(function () {
+        $("ul").append(" <li>nguyen dep trai</li>");
+    }) ;
+});
+ */
+/*$(document).ready(function () {
+    $("#appendtext").click(function () {//the text appears at the beginning of the sentence
+        $("p").prepend(" <b>nguyen dep trai</b> ");
+    }) ;
+    $("#appendlist").click(function () {
+        $("ul").prepend(" <li>nguyen dep trai</li> ");
+    }) ;
+});
+ */
+/*function appendtext() {//create <p> forever
+    var txt1 = "<p>text.</p>";
+    var txt2 =$("<p></p>").text("text.");
+    var txt3 = document.createElement("p");
+    txt3.innerHTML = "text.";
+    $("body").append(txt1,txt2,txt3);
+}
+ */
+/*$(document).ready(function () {
+    $("#before").click(function () {
+        $("img").before(" <b>before</b> ");
+    }) ;
+    $("#after").click(function () {
+        $("img").after(" <i>nguyen dep trai</i> ");
+    }) ;
+});
+ */
+/*function after() {//create <p> forever
+    var txt1 = "<i>I </i>";
+    var txt2 =$("<i></i>").text("love ");
+    var txt3 = document.createElement("b");
+    txt3.innerHTML = "jquery!";
+    $("img").after(txt1,txt2,txt3);
+}
+ */
+
+//bai 13- jquery remove- remove/empty.................................................................................
+/*$(document).ready(function () {//remove div
+    $("#remove").click(function () {
+        $("#flip").remove();// or remove the p tag contain class for exa:$("p").remove(".test, .demo")
+    }) ;
+});
+ */
+/*$(document).ready(function () {
+    $("#empty").click(function () {// hide content inside div
+        $("#flip").empty();
+    }) ;
+});
+ */
+//bai 14- jquery manipulating css - addClass/removeClass/toggleClass/css
+/*$(document).ready(function () {
+    $("#addclass").click(function () {
+        $("h1,p").addClass("blue");
+        $("div").addClass("important");
+    }) ;
+});
+ */
+/*$(document).ready(function () {
+    $("#addclass").click(function () {
+        $("div").addClass("important blue");
+    }) ;
+});
+ */
+/*$(document).ready(function () {
+    $("#addclass").click(function () {
+        $("h1,p").addClass("blue");
+    }) ;
+});
+$(document).ready(function () {
+    $("#removeclass").click(function () {
+        $("h1,p").removeClass("blue");
+    }) ;
+});
+ */
+/*$(document).ready(function () {
+    $("#toggleclass").click(function () {
+        $("h1,p").toggleClass("blue");
+    }) ;
+});
+ */
+/*$(document).ready(function () {
+    $("#css").click(function () {
+        alert("background color = " + $("p").css("background-color"));
+    });
+});
+$(document).ready(function () {
+    $("#css").click(function () {
+        $("p").css("background-color","yellow");
+    });
+});
+$(document).ready(function () {
+    $("#css").click(function () {
+        $("p").css({"background-color": "yellow","font-size": "200%"});
+    });
+});
+ */
+//bai 15- jquery dimensions- width/height/innerWidth/innerHeight/outerWidth/outerHeight
+/*$(document).ready(function () {
+    $("#dimension").click(function () {
+        var txt = "";
+        txt += "width of div: " + $("#divmens").width() + "<br>";
+        txt += "height of div: " + $("#divmens").height() + "<br>";
+        txt += "width of div: " + $("#divmens").innerWidth() + "<br>";
+        txt += "height of div: " + $("#divmens").innerHeight() + "<br>";
+        txt += "width of div (include margin): " + $("#divmens").outerWidth(true) + "<br>";
+        txt += "height of div(include margin): " + $("#divmens").outerHeight(true) + "<br>";
+        $("#divmens").html(txt);
+        txt += "document width/height: " + $(document).width();
+        txt += "x" + $(document).height() + "\n";
+        txt += "window width/height: " + $(window).width();
+        txt += "x" + $(window).height();
+        alert(txt);
+    });
+});*/
+/*$(document).ready(function () {
+    $("#dimension").click(function () {
+        $("#divmens").width(500).height(500);
+    });
+});
+ */
+//bai 16-jquery traversing...................................................................................
